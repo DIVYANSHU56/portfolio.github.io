@@ -5,7 +5,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+.navbar-brand {
 
+  height: 40px;
+  /* Adjust as needed */
+}
 /*--------------------------------------------------------------
 # Font & Color Variables
 # Help: https://bootstrapmade.com/color-system/
@@ -166,6 +170,7 @@ h6 {
 
 .header .logo {
   line-height: 1;
+  
   margin-bottom: 15px;
 }
 
@@ -1273,3 +1278,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+
+

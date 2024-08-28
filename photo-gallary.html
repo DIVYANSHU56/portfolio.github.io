@@ -1,159 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>DivyanshuSharma</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link href="assets/css/main.css" rel="stylesheet"> 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
- <style>/* Main CSS file */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
 
-    /* General body styling */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #f8f9fa;
-        color: #333;
-        margin: 0;
-        padding: 0;
-    }
-    
-    /* Photo Gallery Section */
-    .photo-gallery {
-        padding: 40px 0;
-        background-color: #fff;
-        text-align: center;
-    }
-    
-    .photo-gallery h2 {
-        font-size: 2.5em;
-        margin-bottom: 20px;
-        color: #007bff;
-    }
-    
-    .photo-gallery .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .photo-gallery .gallery .col-lg-3,
-    .photo-gallery .gallery .col-md-4,
-    .photo-gallery .gallery .col-6 {
-        padding: 10px;
-    }
-    
-    .photo-gallery .gallery .img-thumbnail {
-        width: 100%;
-        height: auto;
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-    
-    .photo-gallery .gallery .img-thumbnail:hover {
-        transform: scale(1.05);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-    
-    /* Responsive adjustments */
-    @media (max-width: 992px) {
-        .photo-gallery .gallery .col-lg-3 {
-            max-width: 50%;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .photo-gallery .gallery .col-md-4 {
-            max-width: 50%;
-        }
-    }
-    
-    @media (max-width: 576px) {
-        .photo-gallery .gallery .col-6 {
-            max-width: 100%;
-        }
-    }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link href="assets/css/main.css" rel="stylesheet">  
+<link href="about.html" rel="html"> 
+<!-- Add your fonts here -->
+<!-- Add this in the head section -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+ <!-- Vendor CSS Files -->
+ <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+ <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+ <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+ <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+ <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 </head>
-<body class="container-fluid">
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Divyanshu</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">about</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="resume.html">resume</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  more
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="portfolio.html">portfolio</a></li>
-                  <li><a class="dropdown-item" href="services.html">Services</a></li>
-                  <li><a class="dropdown-item" href="contact.html">contact</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
- 
- <!-- Photo Gallery Section -->
- <section id="photo-gallery" class="photo-gallery my-4">
-    <div class="container">
-    <h2>Photo Gallery</h2>
-    <div class="row gallery">
-      <div class="container-fluid">
-        <img src="images\img\gallary\photo1.jpeg"  alt="Image Preview" class="img-fluid" id="imagePreview" style="display: flexbox;">
-      </div>
-      <div class="container-fluid">
-        <img src="images\img\gallary\photo2.jpeg" alt="Photo 2" class="img-thumbnail">
-      </div>
-      <div class="col-lg-3 col-md-4 col-6 mb-4">
-        <img src="images\img\gallary\photo3.jpeg" alt="Photo 3" class="img-thumbnail">
-      </div>
-      <div class="col-lg-3 col-md-4 col-6 mb-4">
-        <img src="images\img\gallary\photo4.jpeg" alt="Photo 4" class="img-thumbnail">
-      </div>
-      <!-- Add more photos as needed -->
-    </div>
-    </div>
-  </section>
+<body>
 
+</head>
+<body>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <script src="scripts/vendor/bootstrap.bundle.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
- <script>
-  document.getElementById('fileInput').addEventListener('change', function(event) {
-    const file = event.target.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const imageUrl = e.target.result;
-            document.getElementById('imagePreview').src = imageUrl;
-            document.getElementById('imagePreview').style.display = 'block';
-            document.getElementById('downloadButton').href = imageUrl;
-            document.getElementById('downloadButton').style.display = 'block';
-        }
-        reader.readAsDataURL(file);
-    }
-});
-</script>
-</body></html>
+  <div class="upload-section">
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" id="upload" name="image" accept="image/*">
+        <button type="submit">Upload Photo</button>
+    </form>
+</div>
+
+<div class="gallery" id="gallery">
+    <!-- Uploaded images will appear here -->
+</div>
+
+    <h1>My Photo Gallery</h1>
+    <div class="gallery">
+        <img src="images\img\gallary\photo1.jpg" alt="Image 1" onclick="openModal(this.src)">
+        <img src="images\img\gallary\photo2.jpg" alt="Image 2" onclick="openModal(this.src)">
+        <img src="images\img\gallary\photo3.jpg" alt="Image 3" onclick="openModal(this.src)">
+        <img src="images\img\gallary\photo4.jpg" alt="Image 4" onclick="openModal(this.src)">
+        <img src="images\img\gallary\photo5.jpg" alt="Image 5" onclick="openModal(this.src)">
+        <img src="images\img\gallary\photo6.jpg" alt="Image 6" onclick="openModal(this.src)">
+        <img src="images\img\gallary\photo7.jpg" alt="Image 7" onclick="openModal(this.src)">
+        <img src="images\img\gallary\photo8.jpg" alt="Image 8" onclick="openModal(this.src)">
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Modal for enlarged images -->
+    <div id="modal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modal-image" alt="Enlarged Image">
+      <div id="caption" class="caption"></div>
+  </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="scripts/vendor/bootstrap.bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>
