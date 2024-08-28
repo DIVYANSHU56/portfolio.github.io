@@ -177,7 +177,7 @@
 <!-- Contact Section -->
 <section id="contact" class="contact section">
   <h2>Contact</h2>
-  <form id="contactForm" action="https://formspree.io/f/meojgadz" method="POST">
+  <form id="contactForm" method="POST" data-netlify="true">
     <div class="form-group">
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" class="form-control" required>
@@ -190,8 +190,6 @@
       <label for="message">Message:</label>
       <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
     </div>
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-    <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </section>
 </div>
